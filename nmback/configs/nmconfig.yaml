@@ -1,0 +1,10 @@
+# cpu 告警阈值百分比
+CPU_ALARM_THRESHOLD: 95
+# mem 告警阈值百分比
+MEM_ALARM_THRESHOLD: 90
+# disk 告警阈值百分比
+DISK_LARM_THRESHOLD: 90
+# 系统数据采集间隔
+DATA_COLLECTION_INTERVAL: 2s
+# 延迟提醒时间
+DELAY_REMINDER_TIME: 3m

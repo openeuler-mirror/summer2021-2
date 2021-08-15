@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'resource_set.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_sysyemMonitor(object):
+    def setupUi(self, sysyemMonitor):
+        sysyemMonitor.setObjectName("sysyemMonitor")
+        sysyemMonitor.resize(347, 247)
+        self.gridLayoutWidget = QtWidgets.QWidget(sysyemMonitor)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(19, 0, 311, 231))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(10, 0, 12, 0)
+        self.gridLayout.setHorizontalSpacing(42)
+        self.gridLayout.setVerticalSpacing(0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButtonOk = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButtonOk.setObjectName("pushButtonOk")
+        self.gridLayout.addWidget(self.pushButtonOk, 4, 2, 1, 1)
+        self.memLabel = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.memLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.memLabel.setObjectName("memLabel")
+        self.gridLayout.addWidget(self.memLabel, 2, 0, 1, 1)
+        self.diskLabel = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.diskLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.diskLabel.setObjectName("diskLabel")
+        self.gridLayout.addWidget(self.diskLabel, 3, 0, 1, 1)
+        self.cpuLable = QtWidgets.QLabel(self.gridLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.cpuLable.sizePolicy().hasHeightForWidth())
+        self.cpuLable.setSizePolicy(sizePolicy)
+        self.cpuLable.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.cpuLable.setAlignment(QtCore.Qt.AlignCenter)
+        self.cpuLable.setObjectName("cpuLable")
+        self.gridLayout.addWidget(self.cpuLable, 1, 0, 1, 1)
+        self.pushButtonAbout = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButtonAbout.setObjectName("pushButtonAbout")
+        self.gridLayout.addWidget(self.pushButtonAbout, 4, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 3)
+        self.pushButtonCancel = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButtonCancel.setObjectName("pushButtonCancel")
+        self.gridLayout.addWidget(self.pushButtonCancel, 4, 1, 1, 1)
+        self.memspinBox = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.memspinBox.setAlignment(QtCore.Qt.AlignCenter)
+        self.memspinBox.setMaximum(100)
+        self.memspinBox.setProperty("value", 90)
+        self.memspinBox.setObjectName("memspinBox")
+        self.gridLayout.addWidget(self.memspinBox, 2, 1, 1, 2)
+        self.diskspinBox = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.diskspinBox.setAlignment(QtCore.Qt.AlignCenter)
+        self.diskspinBox.setMaximum(100)
+        self.diskspinBox.setProperty("value", 90)
+        self.diskspinBox.setObjectName("diskspinBox")
+        self.gridLayout.addWidget(self.diskspinBox, 3, 1, 1, 2)
+        self.cpuspinBox = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.cpuspinBox.setWrapping(False)
+        self.cpuspinBox.setAlignment(QtCore.Qt.AlignCenter)
+        self.cpuspinBox.setMaximum(100)
+        self.cpuspinBox.setProperty("value", 90)
+        self.cpuspinBox.setDisplayIntegerBase(10)
+        self.cpuspinBox.setObjectName("cpuspinBox")
+        self.gridLayout.addWidget(self.cpuspinBox, 1, 1, 1, 2)
+        self.gridLayout.setSpacing(6)
+
+        self.retranslateUi(sysyemMonitor)
+        QtCore.QMetaObject.connectSlotsByName(sysyemMonitor)
+
+    def retranslateUi(self, sysyemMonitor):
+        _translate = QtCore.QCoreApplication.translate
+        sysyemMonitor.setWindowTitle(_translate("sysyemMonitor", "nm"))
+        self.pushButtonOk.setText(_translate("sysyemMonitor", "Apply"))
+        self.memLabel.setText(_translate("sysyemMonitor", "Mem"))
+        self.diskLabel.setText(_translate("sysyemMonitor", "Disk"))
+        self.cpuLable.setText(_translate("sysyemMonitor", "Cpu"))
+        self.pushButtonAbout.setText(_translate("sysyemMonitor", "About"))
+        self.label.setText(_translate("sysyemMonitor", "<h1>Alarm settings</h1>"))
+        self.pushButtonCancel.setText(_translate("sysyemMonitor", "Cancel"))
+

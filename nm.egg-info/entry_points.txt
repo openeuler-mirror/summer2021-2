@@ -1,0 +1,3 @@
+[console_scripts]
+nm-config = nmfront.main:main
+
