@@ -5,6 +5,7 @@ Version = 1.0
 
 #名字,这个会显示在桌面图标的下方
 Name = nm
+Name[zh_CN]=监控器
 
 #执行文件路径,使用绝对路径
 Exec = /home/openeuler/.local/bin/nm-config
